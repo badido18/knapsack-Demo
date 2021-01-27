@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sac A Dos</title>
+    <script src="./src/script.js" ></script>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div class="nav">
+        <img src="src/backpack.png" alt="knapsack" srcset="">
+        <h1>KNAPSACK<br><span class="reg">Demo</span></h1>
+        <button onclick=reset()>Reset all</button>
+    </div>
+    <div class="app">
+        <div class="leftSide">
+            <div class="addingForm">
+                <h1>Capactity of the knapsack</h1>
+                <input type="number" id="capacity" placeholder="Enter the capacity">
+                <form>
+                    <h1>Add objects</h1>
+                    <input type="number" name="poidsItm" id="poidItm" placeholder="Enter weight">
+                    <input type="number" name="valueItm" id="valueItm" placeholder="Enter value">
+                    <button type="button" onclick=Ajouter()>Add</button>
+                </form>
+            </div>
+            <h1>Objects available</h1>
+            <div class="pendingArea" id="itemStorage"></div>
+            <button onclick=calculate() >Calculate</button>
+        </div>
+        <div class="rightSide">
+            <div class="result">
+                <h1 class="annouce">Solution</p>
+                <p class="resultValue" id="resultValue"></h1>
+                <h1 class="announce">Objects to be taken</h1>
+                <div class="pendingArea"id="resultItms"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

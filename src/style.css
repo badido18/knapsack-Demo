@@ -1,0 +1,196 @@
+@font-face {
+    font-family: Av;
+    src: url("./AvenirNextLTPro-Regular.otf");
+}
+@font-face {
+    font-family: AvB;
+    src: url("./AvenirNextLTPro-Bold.otf");
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin : 0 ;
+    padding : 0;
+    font-family: Av;
+    color: rgb(31, 31, 31);
+    transition:  1s ease-in-out;
+    background-color:rgb(248, 248, 248);
+}
+.nav {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.123);
+    background-color:white;
+}   
+.nav h1 {
+    font-family: AvB;
+    margin : auto ;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.nav button {
+    margin: auto;
+    margin-right: 100px;
+}
+
+.nav img {
+    height: 60%;
+    width: auto;
+    margin: auto;
+    margin-left: 50px;
+    margin-right: 0px;
+}
+button {
+    height: auto;
+    width: auto;
+    padding: 10px;
+    margin : 5px ;
+    color: white;
+    background-color: rgb(52, 52, 189);
+    border : solid 0px ;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.123);
+    outline: none;
+}
+button:hover {
+    background-color: rgb(18, 18, 77);
+}
+button:active {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.295);
+}
+button:focus {
+    outline:none;
+}
+input {
+    outline-color:  rgb(32, 122, 173) ;
+    font-family: AvB;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.123);
+    padding : 10px ;
+    margin: 10px;
+    border : solid 0px ;
+    border-radius: 5px;
+}
+
+input#capacity {
+    min-width: 300px;
+    width: auto;
+}
+
+h1{
+    font-family: AvB;
+    font-size: 20px;
+}
+.reg {
+    font-family: Av;
+}
+.app {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 768px) {
+    .app {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.leftSide {
+    margin: 50px;
+    height: 80%;
+    min-height : 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.addingForm {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    margin: auto;
+    margin-left : 0;
+}
+.addingForm h1 {    
+    margin-top : 10px;
+}
+
+.rightSide {
+    margin: 50px;
+    height: 100%;
+    min-height : 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.itm {
+    display: flex;
+    min-width: 100px;
+    min-height: 90px ;
+    width: auto;
+    height: auto ;
+    flex-direction: column;
+    color: white;
+    font-family: AvB;
+    border-radius: 5px;
+    font-size: 10px;
+    background-color: rgb(25, 162, 241)  ;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.123);
+    margin: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;;
+    margin-right: 0px;
+    padding: 5px ;
+    justify-content: space-evenly;
+    animation: animitem 0.4s ease-in-out;
+}
+.itm > * {
+    margin: auto;
+    height: auto;
+    width : 90%;
+    height : 30px;
+}
+
+.pendingArea {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100% ;
+    padding-top: 10px;
+    min-height: 120px;
+    height: auto;
+    border-radius: 5px;
+    background-color:white;
+    margin-bottom: 10px;
+    transition: 0.4s ease-in-out;
+}
+
+@keyframes animitem {
+    0% { opacity : 0; transform: scale(0); }
+    100%{ opacity: 1 ;  transform: scale(1); } 
+}
+
+.Idclass {
+    width : 90%;
+    height : 30px;
+}
+.vTitle, .wTitle {
+    color : rgb(18, 18, 77);
+}
+
+.v ,.w {
+    color : white;
+}
+.resultValue {
+    color : rgb(9, 155, 240)  ;
+    width: 100%;
+    min-height : 20px;
+    animation: animitem 0.4s ease-in-out;
+}
