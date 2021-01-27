@@ -144,9 +144,8 @@ h1{
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.123);
     margin: auto;
     margin-left: 10px;
-    margin-bottom: 10px;;
     margin-right: 0px;
-    padding: 5px ;
+    padding: 5px;
     justify-content: space-evenly;
     animation: animitem 0.4s ease-in-out;
 }
@@ -159,14 +158,14 @@ h1{
 
 .pendingArea {
     display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
+    justify-content: left ;
+    overflow: auto;
     flex-direction: row;
     width: 100% ;
-    padding-top: 10px;
     min-height: 120px;
     height: auto;
     border-radius: 5px;
+    padding: 5px;
     background-color:white;
     margin-bottom: 10px;
     transition: 0.4s ease-in-out;
